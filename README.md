@@ -102,6 +102,7 @@ python main.py --fed_algorithm GHOST --dataset photo --seed 0 --f_scale 1e-4
 
 # OGBN-Arxiv
 python main.py --fed_algorithm GHOST --dataset ogbn-arxiv --seed 0 --f_scale 1e-7
+```
 
 ## Running Ablation Studies
 
