@@ -78,9 +78,30 @@ parser.add_argument("--lambda_f", type=float, default=0.1)
 
 Please comment or uncomment the corresponding values according to the dataset being used.
 
+For the OASIS baseline, we follow the settings reported in the official OASIS paper. In particular, the `--f_scale` argument is changed only for the Amz-Photo and OGBN-Arxiv datasets.
+
+```bash
+# Amz-Photo
+python main.py --fed_algorithm OASIS --dataset photo --seed 0 --f_scale 1e-5
+
+# OGBN-Arxiv
+python main.py --fed_algorithm OASIS --dataset ogbn-arxiv --seed 0 --f_scale 1e-7
+```
+
+For all other datasets, the default `f_scale` value is used.
+
 ### GHOST
 
-For GHOST, the dataset-specific arguments can be modified in the `args.py` file. Please comment or uncomment the relevant settings according to the dataset.
+For the GHOST baseline, dataset-specific arguments can be configured in the `args.py` file. Please comment or uncomment the relevant settings according to the dataset being used.
+
+We follow the hyperparameter settings reported in the official GHOST paper. Specifically, the `--f_scale` argument is changed only for the Amz-Photo and OGBN-Arxiv datasets:
+
+```bash
+# Amz-Photo
+python main.py --fed_algorithm GHOST --dataset photo --seed 0 --f_scale 1e-4
+
+# OGBN-Arxiv
+python main.py --fed_algorithm GHOST --dataset ogbn-arxiv --seed 0 --f_scale 1e-7
 
 ## Running Ablation Studies
 
