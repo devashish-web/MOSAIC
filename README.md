@@ -46,11 +46,7 @@ python main.py --fed_algorithm MOSAIC --dataset cora --seed 4
 
 ### OASIS
 
-To run the OASIS baseline, please refer to the official GitHub repository:
-
-```text
-<insert OASIS GitHub link here>
-```
+To run the OASIS baseline, please refer to the official GitHub repository: [OASIS]([https://www.kaggle.com/datasets/alaaelmor/ton-iot-train-test-network](https://github.com/JiaruQian/OASIS))
 
 For OASIS, the following dataset-specific hyperparameter values were used:
 
